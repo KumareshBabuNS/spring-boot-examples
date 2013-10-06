@@ -3,8 +3,6 @@
 @Grab("org.springframework:spring-jdbc:4.0.0.M3")
 @Grab("com.h2database:h2:1.3.173")
 
-import org.springframework.jdbc.core.JdbcTemplate
-import org.springframework.jdbc.core.RowMapper
 import java.sql.ResultSet
 
 @Controller

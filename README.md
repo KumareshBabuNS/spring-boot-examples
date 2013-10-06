@@ -8,4 +8,6 @@ Unless specified otherwise in a separate README, most/all of these can be run us
 $ spring run app.groovy
 ```
 
+Note that I'm using version 0.5.0.BUILD-SNAPSHOT of the Spring Boot CLI, so YMMV if you're using 0.5.0.M4.
+
 Enjoy!
