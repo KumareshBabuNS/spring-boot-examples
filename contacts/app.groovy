@@ -1,6 +1,5 @@
 @Grab("org.springframework.boot:spring-boot-starter-actuator:0.5.0.M4")
 @Grab("org.thymeleaf:thymeleaf-spring3:2.0.16")
-@Grab("org.springframework:spring-jdbc:4.0.0.M3")
 @Grab("com.h2database:h2:1.3.173")
 
 import java.sql.ResultSet
