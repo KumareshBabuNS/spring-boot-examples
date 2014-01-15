@@ -1,1 +1,1 @@
-@RestController class App{@RequestMapping("/")String home(){"Hi!"}}
+@RestController class App{@RequestMapping("/")String hi(){"Hi!"}}

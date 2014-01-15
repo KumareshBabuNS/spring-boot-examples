@@ -1,7 +1,7 @@
 @RestController 
 class App { 
   @RequestMapping("/")
-  String home() {
+  String hi() {
   	"Hi!"
   }
 }

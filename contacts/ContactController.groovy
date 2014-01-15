@@ -1,10 +1,8 @@
-@Grab("org.springframework.boot:spring-boot-starter-actuator:0.5.0.M4")
 @Grab("org.thymeleaf:thymeleaf-spring3:2.0.16")
-@Grab("com.h2database:h2:1.3.173")
 
 @Controller
 @RequestMapping("/")
-class App {
+class ContactController {
 
   @Autowired
   ContactRepository contactRepo

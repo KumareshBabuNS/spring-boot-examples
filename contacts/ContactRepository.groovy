@@ -1,6 +1,6 @@
+@Grab("com.h2database:h2:1.3.173")
 import java.sql.ResultSet
 class ContactRepository {
-
   @Autowired
   JdbcTemplate jdbc
 	
@@ -18,5 +18,4 @@ class ContactRepository {
     jdbc.update("insert into contacts (firstName, lastName, phoneNumber, emailAddress) values (?, ?, ?, ?)",
       contact.firstName, contact.lastName, contact.phoneNumber, contact.emailAddress)
   }
-
 }
