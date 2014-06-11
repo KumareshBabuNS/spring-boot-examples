@@ -1,7 +1,7 @@
 @RestController 
 class App { 
   @RequestMapping("/")
-  String hi() {
+  def hi() {
   	"Hi!"
   }
 }
