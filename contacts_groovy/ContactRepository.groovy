@@ -1,5 +1,7 @@
-@Grab("com.h2database:h2:1.3.173")
+@Grab("h2")
+
 import java.sql.ResultSet
+
 class ContactRepository {
   @Autowired
   JdbcTemplate jdbc

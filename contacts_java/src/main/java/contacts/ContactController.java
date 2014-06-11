@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Controller
 @RequestMapping("/")
-@ConfigurationProperties(name="app")
+@ConfigurationProperties(prefix="app")
 public class ContactController {
   private ContactRepository contactRepo;
 

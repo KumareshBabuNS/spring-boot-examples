@@ -1,13 +1,15 @@
 package contacts;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.SpringBootServletInitializer;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 public class ContactsServletInitializer extends SpringBootServletInitializer {
 
     @Override
-    protected void configure(SpringApplicationBuilder application) {
+    protected SpringApplicationBuilder configure(
+    	    SpringApplicationBuilder application) {
         application.sources(Application.class);
+        return application;
     }
 
 }

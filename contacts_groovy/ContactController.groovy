@@ -1,4 +1,5 @@
-@Grab("org.thymeleaf:thymeleaf-spring3:2.0.16")
+@Grab("spring-boot-actuator")
+@Grab("thymeleaf-spring4")
 
 @Controller
 @RequestMapping("/")
@@ -11,12 +12,12 @@ class ContactController {
   String home(Map<String,Object> model) {
     List<Contact> contacts = contactRepo.findAll()
     model.putAll([contacts: contacts])
-    return "home"
+    "home"
   }
 
   @RequestMapping(method=RequestMethod.POST)
   String submit(Contact contact) {
     contactRepo.save(contact)
-    return "redirect:/"
+    "redirect:/"
   }
 }

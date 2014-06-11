@@ -2,15 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
   	<title>Spring Boot Contacts</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
   </head>
   <body>
   	<h2>Spring Boot Contacts</h2>
 
   	<form method="POST">
-  		First Name: <input type="text" name="firstName"></input><br/>
-  		Last Name: <input type="text" name="lastName"></input><br/>
-  		Phone #: <input type="text" name="phoneNumber"></input><br/>
-  		Email: <input type="text" name="emailAddress"></input><br/>
+  		<label for="firstName">First Name:</label><input type="text" name="firstName"></input><br/>
+  		<label for="lastName">Last Name:</label><input type="text" name="lastName"></input><br/>
+  		<label for="phoneNumber">Phone #:</label><input type="text" name="phoneNumber"></input><br/>
+  		<label for="emailAddress">Email:</label><input type="text" name="emailAddress"></input><br/>
   		<input type="submit"></input>
   	</form>
 
