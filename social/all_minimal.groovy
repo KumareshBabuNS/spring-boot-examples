@@ -1,0 +1,1 @@
+class A{Facebook f;Twitter t;LinkedIn l}
